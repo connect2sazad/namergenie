@@ -1,15 +1,25 @@
-require('dotenv').config();  // Load the environment variables
-
+require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
+const connectDB = require('./config/db');
+
+const nameRoutes = require('./routes/name.routes');
+const errorHandler = require('./middlewares/errorHandler');
+const { BASE_URL, PORT } = require('./config/env');
+
+// DB Connection
+connectDB();
+
 const app = express();
+app.use(cors());
+app.use(express.json());
 
-// Use SERVER_PORT from the environment variable, default to 5001 if not provided
-const port = process.env.SERVER_PORT || 5001;
+// Routes
+app.use('/api/names', nameRoutes);
 
-app.get('/', (req, res) => {
-  res.send('Hello from Express with dotenv!');
-});
+// Global Error Handler
+app.use(errorHandler);
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`🚀 Server started on ${BASE_URL}`);
 });

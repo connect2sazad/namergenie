@@ -1,4 +1,4 @@
-import React, { cloneElement, isValidElement } from "react";
+import React from "react";
 
 const SingleTextCard = ({ title, text }) => {
 
