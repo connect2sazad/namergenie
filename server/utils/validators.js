@@ -20,7 +20,13 @@ const validateGenerateName = [
   }
 ];
 
-// You can export multiple validators as needed
+// Validator: For email subscription requests
+function isValidEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
 module.exports = {
-  validateGenerateName
+  validateGenerateName,
+  isValidEmail
 };

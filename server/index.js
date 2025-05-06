@@ -1,11 +1,13 @@
 require('dotenv').config();
+const { BASE_URL, PORT } = require('./config/env');
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
 
 const nameRoutes = require('./routes/name.routes');
+const subscribeRoutes = require("./routes/subscribe.routes");
+
 const errorHandler = require('./middlewares/errorHandler');
-const { BASE_URL, PORT } = require('./config/env');
 
 // DB Connection
 connectDB();
@@ -16,6 +18,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/names', nameRoutes);
+app.use('/api/subscribe', subscribeRoutes);
 
 // Global Error Handler
 app.use(errorHandler);
