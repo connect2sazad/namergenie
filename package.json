@@ -4,7 +4,9 @@
   "scripts": {
     "client": "cd client && npm start",
     "server": "cd server && nodemon index.js",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "preinstall": "npm --prefix client install && npm --prefix server install",
+    "setup": "npm install && npm --prefix client install && npm --prefix server install"
   },
   "devDependencies": {
     "concurrently": "^8.0.0"
