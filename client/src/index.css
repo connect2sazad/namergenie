@@ -1,0 +1,34 @@
+
+html,body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #0f001a 0%, #1a0033 100%) no-repeat fixed center;
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  color: white;
+  margin: 0;
+  font-family: 'Inter', sans-serif!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-theme-primary-input{
+  background: rgba(255, 255, 255, 0.05)!important;
+}
+
+.bg-theme-primary{
+  background: rgba(255, 255, 255, 0.05)!important;
+}
+
+.no-outline{
+  outline: none;
+}
+
+.no-rounded-right{
+  border-top-right-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+}
+
+.text-white::placeholder{
+  color: white!important;
+}
