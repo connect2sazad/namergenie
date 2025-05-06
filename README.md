@@ -2,9 +2,9 @@
   <img src="https://lyncdigit.com/assets/images/logo.png" alt="NamerGenie by Lyncdigit" width="200"/>
 </p>
 
-# 🧞‍♂️ NameRGenie — Your AI-Powered Naming Wizard
+# 🧞‍♂️ NamerGenie — Your AI-Powered Naming Wizard
 
-**NameRGenie** is an AI-driven name generation tool built for founders, creators, and marketers who are tired of boring, overused name ideas. With a sprinkle of AI magic and some smart algorithms, NameRGenie crafts unique, brandable names in seconds — so you can stop stressing and start building.
+**NamerGenie** is an AI-driven name generation tool built for founders, creators, and marketers who are tired of boring, overused name ideas. With a sprinkle of AI magic and some smart algorithms, NamerGenie crafts unique, brandable names in seconds — so you can stop stressing and start building.
 
 > 🚀 A product by [Lyncdigit Technologies Pvt. Ltd.](https://lyncdigit.com)
 
@@ -32,7 +32,6 @@
 ## 👀 Live Preview
 
 > Coming soon at [www.namergenie.com](https://www.namergenie.com)  
-> (or your hosted link)
 
 ---
 
