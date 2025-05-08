@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/names', nameRoutes);
-app.use('/api/subscriptions', subscribeRoutes);
+app.use('/api/subscribe', subscribeRoutes);
 
 // Global Error Handler
 app.use(errorHandler);

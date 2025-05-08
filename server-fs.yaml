@@ -1,0 +1,22 @@
+config
+    - db.js
+    - env.js
+index.js
+models
+    - name.model.js
+package.json
+routes
+    - name.routes.js
+    - subscribe.routes.js
+utils
+    - constants.js
+    - validators.js
+controllers
+    - name.controller.js
+middlewares
+    - errorHandler.js
+    - logger.js
+node_modules
+package-lock.json
+services
+    - ai.service.js
