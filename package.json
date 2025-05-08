@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && npm start",
+    "admin": "cd admin && npm start",
     "server": "cd server && nodemon index.js",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "preinstall": "npm --prefix client install && npm --prefix server install",
-    "setup": "npm install && npm --prefix client install && npm --prefix server install"
+    "start": "concurrently \"npm run server\" \"npm run admin\" \"npm run client\"",
+    "preinstall": "npm --prefix client install && npm --prefix server install && npm --prefix admin install",
+    "setup": "npm install && npm --prefix client install && npm --prefix server install && npm --prefix admin install"
   },
   "devDependencies": {
     "concurrently": "^8.0.0"
