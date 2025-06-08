@@ -143,6 +143,7 @@ ai/*.pkl
 
 # Virtual Environments
 ai/venv/
+ai/tf-env/
 ai/env/
 ai/.venv/
 
