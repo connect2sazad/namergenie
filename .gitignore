@@ -134,3 +134,27 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Python
+ai/__pycache__/
+ai/*.py[cod]
+ai/*.pkl
+
+# Virtual Environments
+ai/venv/
+ai/env/
+ai/.venv/
+
+# IDEs and editors
+ai/.vscode/
+ai/.idea/
+
+# System files
+ai/.DS_Store
+
+# Logs
+ai/*.log
+
+# OS junk
+ai/Thumbs.db
